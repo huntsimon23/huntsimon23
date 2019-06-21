@@ -1,0 +1,218 @@
+/* ==================================================================
+MEDIA QUERIES - RESPONSIVE FEATURES
+================================================================== */
+
+@media (max-width: 992px) {
+    body {
+        font-size: 12px;
+        line-height: 18px;
+    }
+    section,
+    .aboutme .section-author-image,
+    .testimonials-messages {
+		padding: 75px 0px;
+	}
+	.aboutme .section-author-image-2{
+		padding-top: 75px;
+	}
+	.aboutme .author-image-2:before {
+	    content: ' ';
+	    display: block;
+	    position: absolute;
+	    left: 0;
+	    top: 0;
+	    width: 100%;
+	    height: 100%;
+	    opacity: 0.75;
+	    background: #fff;;
+	}
+	h2 {
+	    font-size: 4em;
+	}
+	h3 {
+	    font-size: 1.2em;
+	    line-height: 1.35em;
+	}
+	h4 {
+        font-size: 2.7em;
+	    line-height: 1.3em;
+	}
+    h5 {
+        font-size: 1.05em;
+        line-height: 1.25em;
+    }
+    .loader-logo {
+        font-size: 5.5em;
+        line-height: 1em;
+    }
+    .aboutme .author-image{
+		width: 280px;
+		height: 280px;
+		margin-bottom: 20px;	
+	}
+    .aboutme .skills .skill{
+        margin-bottom: 50px;
+    }
+    .experience a{
+    	padding: 0px;
+    }
+    .experience .date{
+        width: 100px;
+    }
+    .panel-group .panel-heading + .panel-collapse > .panel-body, .panel-group .panel-heading + .panel-collapse > .list-group{
+        margin-left: 103px
+    }
+    .menu-mobile ul{
+    	height: 240px;
+    }
+}
+
+@media (max-width: 767px) {
+	section,
+	.aboutme .section-author-image{
+		padding: 25px 0px;
+	}
+	.aboutme .section-author-image-2{
+		padding-top: 25px;
+	}
+	.aboutme .author-image-2 {
+		background-size: 120%;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	.clearfix{
+		margin: 10px 0px;
+	}
+	#mainNav {
+		padding-top: 0px;
+	}
+	#mainNav .navbar-brand {
+		float: left;
+		margin-left: 0px;
+		border: none;
+	}
+	#mainNav .navbar-brand svg{
+		width: 1.3em;
+	}
+    .menu-mobile ul li button{
+        font-size: 2em;
+    }
+    .menu-mobile ul{
+    	height: 200px;
+    }
+	.navTop .pt-trigger-container {
+		height: 60px;
+		width: 100%;
+	}
+	.services .twitter-content .twitter-heading span:before, 
+	.services .twitter-content .twitter-heading span:after {
+		width: 100px;
+	}
+	.services .media{
+		margin-bottom: 15px;
+	}
+	#filters button{
+		font-size: 0.9em;
+		margin-bottom: 5px;
+	}
+    .item .item-content,
+    .item:hover .item-content{
+        opacity: 1;
+        border-radius: 0px;
+    }
+    .item,
+	#gallery .grid-sizer {
+		width: 50%;
+	}
+	.item.w2 {
+		width: 100%;
+	}
+    .testimonials-messages .comment{
+        font-size: 2em;
+    }
+    .testimonials-messages .comment-author{
+        font-size: 1.2em;
+    }
+    .item .item-content a,
+    .item .item-content button{
+        border-radius: 0px;
+        border: 0px;
+        padding: 20px;
+    }
+    .item .item-content a h4,
+    .item .item-content a p,
+    .item .item-content button h4,
+    .item .item-content button p {
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+        transform: scale(1);
+    }
+    .item .item-content a h4,
+    .item .item-content button h4{
+        font-size: 1.3em;
+        margin-bottom: 5px;
+    }
+    .testimonials-messages{
+		height: 250px;
+	}
+	.services .twitter-content .twitter-heading{
+		margin-bottom: 10px;
+	}
+	#filters{
+		margin-bottom: 20px
+	}
+	#work-content h4{
+		padding-right: 40px;
+	}
+	.work-container button{
+		top: 0px;
+		right: 10px;
+		width: 40px;
+		height: 40px;
+		font-size: 1.6em;
+	}
+	.blog .post-right .post-image{
+		margin-bottom: 10px;
+	}
+    input.form-control, textarea.form-control,
+    .send-div button{
+        font-size: 1em;
+    }
+    .blog .post-right a.read-more{
+    	margin-top: 0px;
+    }
+    footer .footer-social{
+    	margin: 10px 0px;
+    }
+	footer .footer-social li{
+		margin: 0px 5px;
+	}
+	footer .footer-social li a{
+		font-size: 1.3em;
+		margin-top: 10px;
+		margin-bottom: 0px;
+	}
+	footer{
+		padding-bottom: 75px;
+	}
+    footer hr{
+        margin-top: 0px;
+    }
+    footer a.toTop{
+    	padding: 7px;
+    	bottom: 10px;
+    	right: 45%;
+    }
+}
+
+@media (max-width: 480px) {
+	.item,
+	.item.w2,
+	#gallery .grid-sizer {
+    	width: 100%;
+  	}
+}
+
+
