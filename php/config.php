@@ -1,16 +1,16 @@
 <?
 	//define the receiver of the email
 	
-	define('TO_NAME','name');  //put your name
-	define('TO_EMAIL','email@domain.com');  //put your email
+	define('TO_NAME','Simon Hunt');  //put your name
+	define('TO_EMAIL','hunt.simon23.com');  //put your email
 
 	define('TEMPLATE_PATH','template/default.php');
  
 
-	define('SMTP_HOST','smtp.domain.com'); //for example gmail: smtp.gmail.com
-	define('SMTP_USERNAME','email@domain.com'); //put your email
-	define('SMTP_PASSWORD','password'); //put your password
-	define('SUBJECT','Contact from your website White HTML'); //change if you want the subject
+	define('SMTP_HOST','smtp.gmail.com'); //for example gmail: smtp.gmail.com
+	define('SMTP_USERNAME','hunt.simon23@gmail.com'); //put your email
+	define('SMTP_PASSWORD','shalom77'); //put your password
+	define('SUBJECT','Contact from your portfolio page'); //change if you want the subject
 	
 	// Messages
 	define('MSG_INVALID_NAME','Please enter your name.');
