@@ -33,7 +33,8 @@ jQuery(function($){
 		thumb_links				:	1,			// Individual thumb links for each slide
 		thumbnail_navigation    :   0,			// Thumbnail navigation
 		slides 					:  	[			// Slideshow Images
-												{image : 'http://placehold.it/1280x720&text=Image+1', title : 'White - Creative Resume & Portfolio Template'}
+												{image : 'img/codeBKG.png', 
+												title : 'White - Creative Resume & Portfolio Template'}
 									],
 										
 		// Theme Options			   
