@@ -1,7 +1,4 @@
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie10 lt-ie9"><![endif]-->
-<!--[if IE 9]><html class="no-js lt-ie10">		 <![endif]-->
-<!--[if gt IE 9]><!--> <html class="no-js"> 	 <!--<![endif]-->
 <head>
 
 	<!-- ==============================================
@@ -45,11 +42,11 @@
 	<!-- ==============================================
 	Favicons
 	=============================================== -->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/favicon/apple-touch-icon-144x144-precomposed.png">
+    <!-- <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/favicon/apple-touch-icon-144x144-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/favicon/apple-touch-icon-114x114-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/favicon/apple-touch-icon-72x72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="57x57" href="img/favicon/apple-touch-icon-57x57-precomposed.png">
-    <link rel="shortcut icon" href="img/favicon/favicon.png" />
+    <link rel="shortcut icon" href="img/favicon/favicon.png" /> -->
 		
 </head>       
 <body>
@@ -79,9 +76,8 @@
 			<h1><button class="navbar-brand round-logo pt-trigger css3Animate" data-animation="22" data-goto="1" data-style="lightNav">S</button></h1>
 			<ul class="nav navbar-nav hidden-xs">
 				<li><button class="pt-trigger css3Animate" data-animation="22" data-goto="2" data-style="darkNav" data-style2="aboutmeNav">About me<span class="line css3Animate"></span></button></li>
-				<li><button class="pt-trigger right-margin css3Animate" data-animation="22" data-goto="3" data-style="darkNav" data-style2="workNav">Portfolio<span class="line css3Animate"></span></button></li>
-				<li><button class="pt-trigger left-margin css3Animate" data-animation="22" data-goto="5" data-style="darkNav" data-style2="blogNav">Blog<span class="line css3Animate"></span></button></li>
-				<li><button class="pt-trigger css3Animate" data-animation="22" data-goto="6" data-style="lightNav" data-style2="contactNav">Contact<span class="line css3Animate"></span></button></li>
+				<li><div></div></li>
+				<li><button class="pt-trigger left-margin css3Animate" data-animation="22" data-goto="3" data-style="darkNav" data-style2="workNav">Portfolio<span class="line css3Animate"></span></button></li>
 			</ul>
 			<a href="#" id="menuMobileOpen" class="css3Animate hidden-sm hidden-md hidden-lg" aria-hidden="true" data-icon="&#x61;" title=""></a>
 		</div>
@@ -91,8 +87,6 @@
     	<ul class="nav navbar-nav">
 			<li><button class="pt-trigger css3Animate" data-animation="22" data-goto="2" data-style="darkNav" data-style2="aboutmeNav">About me<span class="line css3Animate"></span></button></li>
 			<li><button class="pt-trigger css3Animate" data-animation="22" data-goto="3" data-style="darkNav" data-style2="workNav">Portfolio<span class="line css3Animate"></span></button></li>
-			<li><button class="pt-trigger css3Animate" data-animation="22" data-goto="5" data-style="darkNav" data-style2="blogNav">Blog<span class="line css3Animate"></span></button></li>
-			<li><button class="pt-trigger css3Animate" data-animation="22" data-goto="6" data-style="lightNav" data-style2="contactNav">Contact<span class="line css3Animate"></span></button></li>
 		</ul>
     </div>
 
@@ -215,132 +209,65 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12">
-						<!-- <h3>Check out and enjoy</h3> -->
 						<h4>Portfolio</h4>
 						<div class="clearfix"></div>
-						
-						<!-- FILTER -->
-						<!-- <div id="filters">
-							<button class="css3Animate checked" data-filter="*">ALL</button>
-							<button class="css3Animate" data-filter=".design">DESIGN</button>
-							<button class="css3Animate" data-filter=".video">VIDEO</button>
-							<button class="css3Animate" data-filter=".photo">PHOTOGRAPHY</button>
-						</div> -->
 						
 						<!-- GALLERY -->					
 						<div id="gallery">
 					      	<div class="grid-sizer"></div>
 					      	<!-- IMAGE 1 -->
 					      	<div class="item w2 photo">
-                                <img class="css3Animate" src="./img/images/DisasterDashboard.png" alt="" />
+                                <img class="css3Animate img-thumbnail" src="./img/images/DisasterDashboard.png" alt="" />
                                 <div class="item-content css3Animate">
-                                    <a href="https://huntsimon23.github.io/hurricane-code/" class="css3Animate" title="Disaster Dashboard">
+                                    <a type="button" data-toggle="modal" data-target="#DisasterDashboard" class="css3Animate" title="Disaster Dashboard">
                                         <h4 class="css3Animate">Disaster Dashbord</h4>
-                                        <p class="css3Animate">Web app calling on & returning data from several public API's, including Youtube and the New York Times.  User authentication and storage with Firebase.</p>
+                                        <p class="css3Animate">Web app calling on & returning data from several public API's, including Youtube and the New York Times.  User authentication and storage with Firebase.<br><br><button class="btn btn-primary">Read More</button></p>
                                     </a>
                                 </div>
 							</div>
 							<!-- IMAGE 2 -->
-							<div class="item photo">
-                                <img class="css3Animate" src="./img/images/JQueryGame.png" alt="" />
-                                <div class="item-content css3Animate">
-                                    <a href="https://huntsimon23.github.io/unit-4-game/" class="css3Animate" title="Infinity Gems">
-                                        <h4 class="css3Animate">Infinity Gems - JQuery Game</h4>
-                                        <p class="css3Animate">Simple click game demonstrating the use of JQuery to dynamically assign and retrirve values & event listeners to assigned page elements.</p>
-                                    </a>
-                                </div>
-							</div>
+							<div class="item w2 photo">
+									<img class="css3Animate img-thumbnail" src="./img/MarvelShuffle.png" alt="" />
+									<div class="item-content css3Animate">
+										<a type="button" data-toggle="modal" data-target="#MarvelShuffle" class="css3Animate" title="Marvel Shuffle">
+											<h4 class="css3Animate">Marvel Shuffle</h4>
+											<p class="css3Animate">web app demonstrating basic proficiency in ReactJS.<br><br><button class="btn btn-primary">Read More</button></p>
+										</a>
+									</div>
+								</div>
+						
 					      	<!-- IMAGE 3 -->
-					      	<div class="item photo">
-                                <img class="css3Animate" src="./img/images/Goodburger.png" alt="" />
-                                <div class="item-content css3Animate">
-                                    <a href="https://agile-oasis-33760.herokuapp.com/" class="css3Animate" title="Goodburger!">
-                                        <h4 class="css3Animate">Goodburger!</h4>
-                                        <p class="css3Animate">A heroku-deployed app utilizing nodeJS, handlebars, expressJS, MySQL DB</p>
-                                    </a>
-                                </div>
-					      	</div>
-					      	<!-- IMAGE 4 -->
 					      	<div class="item w2 photo">
-                                <img class="css3Animate" src="./img/ParkPlanner.png" alt="" />
+                                <img class="css3Animate img-thumbnail" src="./img/ParkPlanner.png" alt="" />
                                 <div class="item-content css3Animate">
-                                    <a href="https://hidden-sierra-59159.herokuapp.com/" class="css3Animate" title="ParkPlanner">
+                                    <a type="button" data-toggle="modal" data-target="#ParkPlanner" class="css3Animate" title="ParkPlanner">
                                         <h4 class="css3Animate">ParkPlanner</h4>
-                                        <p class="css3Animate">A heroku-deployed app utilizing nodeJS, handlebars, express, MySQL, and Sequelize</p>
+                                        <p class="css3Animate">A heroku-deployed app utilizing nodeJS, handlebars, express, MySQL, and Sequelize<br><br><button class="btn btn-primary">Read More</button></p>
                                     </a>
                                 </div>
-					      	</div>
-					      	<!-- IMAGE 5 -->
-					      	<div class="item photo">
-                                <img class="css3Animate" src="./img/images/NodeSQL.png" alt="" />
-                                <div class="item-content css3Animate">
-                                	<a class="pt-trigger css3Animate" href="https://github.com/huntsimon23/bamazon" data-animation="19" data-goto="4">
-                                        <h4 class="css3Animate">"Bamazon"</h4>
-                                        <p class="css3Animate">A non-deployed command line application demonstrating proficiency in node.JS and MySQL.  (Link to deomstration in README on GitHub).</p>
-                                    </a>
-                                </div>
-					      	</div>
-					      	<!-- IMAGE 6 -->
-					      	<div class="item photo">
-                                <img class="css3Animate" src="./img/images/Liri concert-thisNODE.jpg" alt="" />
-                                <div class="item-content css3Animate">
-                                	<a class="pt-trigger css3Animate" href="https://github.com/huntsimon23/liribot" data-animation="19" data-goto="4">
-                                        <h4 class="css3Animate">Liribot</h4>
-                                        <p class="css3Animate">This non-deployed project utilizes a command line interface (CLI/Node.js) to create a search engine bot. (Link to deomstration in README on GitHub).</p>
-                                    </a>
-                                </div>
-					      	</div>
-					      	<!-- IMAGE 7 -->
-							<!-- <div class="item design">
-                                <img class="css3Animate" src="http://placehold.it/800x440&text=Ajax" alt="" />
-                                <div class="item-content css3Animate">
-                                	<a class="pt-trigger css3Animate menu-hide work-call" href="works/work3.html" data-animation="19" data-goto="4">
-                                        <h4 class="css3Animate">AJAX EXAMPLE</h4>
-                                        <p class="css3Animate">The awesome project description</p>
-                                    </a>
-                                </div>
-							</div> -->
-					      	<!-- IMAGE 8 -->
-					     	<!-- <div class="item photo design">
-                                <img class="css3Animate" src="http://placehold.it/800x440&text=Image" alt="" />
-                                <div class="item-content css3Animate">
-                                    <a href="http://placehold.it/800x440&text=Image" class="css3Animate portfolio-popup" title="">
-                                        <h4 class="css3Animate">IMAGE EXAMPLE</h4>
-                                        <p class="css3Animate">The awesome project description</p>
-                                    </a>
-                                </div>
-					    	</div> -->
-					      	<!-- IMAGE 9 -->
-					     	<!-- <div class="item video">
-                                <img class="css3Animate" src="http://placehold.it/659x800&text=Video" alt="" />
-                                <div class="item-content css3Animate">
-                                    <a href="http://www.youtube.com/watch?v=kn-1D5z3-Cs" class="css3Animate portfolio-youtube" title="">
-                                        <h4 class="css3Animate">VIDEO EXAMPLE</h4>
-                                        <p class="css3Animate">The awesome project description</p>
-                                    </a>
-                                </div>
-					      	</div> -->
-					      	<!-- IMAGE 10 -->
-					     	<!-- <div class="item video">
-                                <img class="css3Animate" src="http://placehold.it/659x800&text=Video" alt="" />
-                                <div class="item-content css3Animate">
-                                    <a href="https://vimeo.com/52262947" class="css3Animate portfolio-vimeo" title="">
-                                        <h4 class="css3Animate">VIDEO EXAMPLE</h4>
-                                        <p class="css3Animate">The awesome project description</p>
-                                    </a>
-                                </div>
-					    	</div> -->
-					      	<!-- IMAGE 11 -->
-					     	<!-- <div class="item w2 graphic">
-                                <img class="css3Animate" src="http://placehold.it/800x440&text=Image" alt="" />
-                                <div class="item-content css3Animate">
-                                    <a href="http://placehold.it/800x440&text=Image" class="css3Animate portfolio-popup" title="">
-                                        <h4 class="css3Animate">IMAGE EXAMPLE</h4>
-                                        <p class="css3Animate">The awesome project description</p>
-                                    </a>
-                                </div>
-					     	</div>	 -->
-					    <!-- </div> FINISH GALLERY -->
+							  </div>
+							
+							  <!-- IMAGE 4 -->
+					      	<div class="item w2 photo">
+									<img class="css3Animate img-thumbnail" src="./img/GiphyNFL.png" alt="" />
+									<div class="item-content css3Animate">
+										<a type="button" data-toggle="modal" data-target="#GiphyNFL" class="css3Animate" title="GiphyNFL">
+											<h4 class="css3Animate">GiphyNFL</h4>
+											<p class="css3Animate">A JavaScript application that demonstrates proficiency in JQuery and AJAX HTML methods.<br><br><button class="btn btn-primary">Read More</button></p>
+										</a>
+									</div>
+								  </div>
+							
+							<!-- IMAGE 5 -->
+							<div class="item w2 photo">
+									<img class="css3Animate img-thumbnail" src="./img/Fox35NewsTalk.png" alt="" />
+									<div class="item-content css3Animate">
+										<a type="button" data-toggle="modal" data-target="#Fox35NewsTalk" class="css3Animate" title="Fox35NewsTalk">
+											<h4 class="css3Animate">Fox 35 NewsTalk</h4>
+											<p class="css3Animate">A Project demonstrating proficiency scraping data from a local news website and creating a social platform to discuss it using a deployed MongoDB backend database.<br><br><button class="btn btn-primary">Read More</button></p>
+										</a>
+									</div>
+								</div>
 					</div>
 				</div>
 			</div>
@@ -349,71 +276,213 @@
     
     
     <!-- ==============================================
-	WORK - CONTENT
+	WORK - CONTENT(MODALS)
 	=============================================== -->
-    <div class="pt-page single-work">
-    	<section>
-    		<div class="container">
-				<div class="row work-container">
-					<button class="pt-trigger css3Animate menu-show" data-animation="20" data-goto="3" data-style="darkNav" data-style2="workNav">
-	            		<span aria-hidden="true" data-icon="&#x4d;"></span>
-	              	</button>
-					<div id="work-content">
-						
-					</div>
-				</div>
-			</div>
-		</section>
-    </div> <!-- END CONTACT SECTION -->
+										<!-- Modal Fox35-->
+										<div class="modal fade" id="Fox35NewsTalk" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+												<div class="modal-dialog modal-dialog-centered" role="document">
+												  <div class="modal-content">
+													<div class="modal-header">
+													  <h5 class="modal-title" id="exampleModalCenterTitle">Gem Collector</h5>
+													  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+														<span aria-hidden="true">&times;</span>
+													  </button>
+													</div>
+													<div class="modal-body">
+													<div class="container-fluid"></div>
+														<img class="css3Animate img-fluid" src="./img/Fox35NewsTalk.png" alt="" height="200px" width="300px" />	
+														<br>
+															<a href="https://github.com/huntsimon23/Fox35newsTalk" target="blank"><button class="btn btn-info"> GitHub Repository</button></a>
+								
+															<a href="https://serene-brushlands-11288.herokuapp.com/" target="blank"><button class="btn btn-info" > Deployed Application </button></a>
+														<br>
+														<br>
+														<p>A Project demonstrating proficiency scraping data from a local news website and creating a social platform to discuss it using a deployed MongoDB backend database.</p>
+														<br>
+														<ul>Concepts and technologies used:
+															<li>HTML</li>
+															<li>CSS - Bootstrap</li>
+															<li>JQuery</li>
+															<li>MongoDB - deployed</li>
+															<li>NodeJS</li>
+															<li>ExpressJS</li>
+															<li>Handlebars</li>
+															<li>Cheerio(NPM) for web scraping</li>
+															<li>Heroku - deployment</li>
+														</ul>
+														<!-- <p>A sample guest account if authentication is necessary</p> -->
+													</div>
+													</div>
+													<div class="modal-footer">
+													  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+													</div>
+												  </div>
+												</div>
+											  </div> 
+											  <!-- END MODAL -->
+
+											  <!-- Modal GiphyNFL-->
+										<div class="modal fade" id="GiphyNFL" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+												<div class="modal-dialog modal-dialog-centered" role="document">
+												  <div class="modal-content">
+													<div class="modal-header">
+													  <h5 class="modal-title" id="exampleModalCenterTitle">Giphy NFL</h5>
+													  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+														<span aria-hidden="true">&times;</span>
+													  </button>
+													</div>
+													<div class="modal-body">
+													<div class="container-fluid"></div>
+														<img class="css3Animate img-fluid" src="./img/GiphyNFL.png" alt="" height="200px" width="300px" />	
+														<br>
+															<a href="https://github.com/huntsimon23/GiphyNFL" target="blank"><button class="btn btn-info"> GitHub Repository</button></a>
+								
+															<a href="https://huntsimon23.github.io/Giphy/" target="blank"><button class="btn btn-info" > Deployed Application </button></a>
+														<br>
+														<br>
+														<p>A JavaScript application that demonstrates proficiency in JQuery and AJAX HTML methods.</p>
+														<br>
+														<ul>Concepts and technologies used:
+															<li>HTML</li>
+															<li>CSS - Bootstrap</li>
+															<li>JQuery</li>
+															<li>AJAX</li>
+															<li>JSON</li>
+														</ul>
+														<!-- <p>A sample guest account if authentication is necessary</p> -->
+													</div>
+													</div>
+													<div class="modal-footer">
+													  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+													</div>
+												  </div>
+												</div>
+											  </div> 
+											  <!-- END MODAL -->
+
+											  <!-- Modal MarvelShuffle-->
+										<div class="modal fade" id="MarvelShuffle" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+												<div class="modal-dialog modal-dialog-centered" role="document">
+												  <div class="modal-content">
+													<div class="modal-header">
+													  <h5 class="modal-title" id="exampleModalCenterTitle">Marvel Shuffle</h5>
+													  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+														<span aria-hidden="true">&times;</span>
+													  </button>
+													</div>
+													<div class="modal-body">
+													<div class="container-fluid"></div>
+														<img class="css3Animate img-fluid" src="./img/MarvelShuffle.png" alt="" height="200px" width="300px" />	
+														<br>
+															<a href="https://github.com/huntsimon23/MarvelShuffle" target="blank"><button class="btn btn-info"> GitHub Repository</button></a>
+								
+															<a href="https://huntsimon23.github.io/MarvelShuffle/" target="blank"><button class="btn btn-info" > Deployed Application </button></a>
+														<br>
+														<br>
+														<p>A web app demonstrating basic proficiency in ReactJS.</p>
+														<br>
+														<ul>Concepts and technologies used:
+															<li>HTML</li>
+															<li>CSS - Bootstrap</li>
+															<li>JQuery</li>
+															<li>AJAX</li>
+															<li>JSON</li>
+															<li>ReactJS</li>
+															<li>gh-pages NPM package</li>
+														</ul>
+														<!-- <p>A sample guest account if authentication is necessary</p> -->
+													</div>
+													</div>
+													<div class="modal-footer">
+													  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+													</div>
+												  </div>
+												</div>
+											  </div> 
+											  <!-- END MODAL -->
+											  	  <!-- Modal Park Planner-->
+										<div class="modal fade" id="ParkPlanner" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+												<div class="modal-dialog modal-dialog-centered" role="document">
+												  <div class="modal-content">
+													<div class="modal-header">
+													  <h5 class="modal-title" id="exampleModalCenterTitle">Park Planner</h5>
+													  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+														<span aria-hidden="true">&times;</span>
+													  </button>
+													</div>
+													<div class="modal-body">
+													<div class="container-fluid"></div>
+														<img class="css3Animate img-fluid" src="./img/ParkPlanner.png" alt="" height="200px" width="300px" />	
+														<br>
+															<a href="https://github.com/kstokes16/ParkPlanner" target="blank"><button class="btn btn-info"> GitHub Repository</button></a>
+								
+															<a href="https://hidden-sierra-59159.herokuapp.com/" target="blank"><button class="btn btn-info" > Deployed Application </button></a>
+														<br>
+														<br>
+														<p>A collaborative, heroku-deployed web app deomstrating proficiency in the use of SQL relational databases and tables.</p>
+														<br>
+														<ul>Concepts and technologies used:
+															<li>HTML</li>
+															<li>CSS - Bootstrap</li>
+															<li>JQuery</li>
+															<li>AJAX</li>
+															<li>MySQL/Sequelize</li>
+															<li>Heroku - deployment</li>
+															<li>NodeJS</li>
+															<li>ExpressJS</li>
+															<li>Handlebars</li>
+														</ul>
+														<!-- <p>A sample guest account if authentication is necessary</p> -->
+													</div>
+													</div>
+													<div class="modal-footer">
+													  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+													</div>
+												  </div>
+												</div>
+											  </div> 
+											  <!-- END MODAL -->
+											   <!-- Modal Park Planner-->
+										<div class="modal fade" id="DisasterDashboard" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+												<div class="modal-dialog modal-dialog-centered" role="document">
+												  <div class="modal-content">
+													<div class="modal-header">
+													  <h5 class="modal-title" id="exampleModalCenterTitle">Disaster Dashboard</h5>
+													  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+														<span aria-hidden="true">&times;</span>
+													  </button>
+													</div>
+													<div class="modal-body">
+													<div class="container-fluid"></div>
+														<img class="css3Animate img-fluid" src="./img/images/DisasterDashboard.png" alt="" height="200px" width="300px" />	
+														<br>
+															<a href="https://github.com/huntsimon23/hurricane-code" target="blank"><button class="btn btn-info"> GitHub Repository</button></a>
+								
+															<a href="https://huntsimon23.github.io/hurricane-code/ " target="blank"><button class="btn btn-info" > Deployed Application </button></a>
+														<br>
+														<br>
+														<p>A collaborative, Github-pages deployed web app deomstrating proficiency in the use of API calls and Firebase Authentication and Storage</p>
+														<br>
+														<ul>Concepts and technologies used:
+															<li>HTML</li>
+															<li>CSS - Bootstrap</li>
+															<li>JQuery</li>
+															<li>AJAX</li>
+															<li>API's (Youtube, ReliefWeb, MapBox, New York Times)</li>
+															<li>Firebase (Authentication and Storage</li>
+														</ul>
+														<!-- <p>A sample guest account if authentication is necessary</p> -->
+													</div>
+													</div>
+													<div class="modal-footer">
+													  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+													</div>
+												  </div>
+												</div>
+											  </div> 
+											  <!-- END MODAL -->
+											  <!-- END CONTENT SECTION -->
     
-    
-    
-    
-    
-    <!-- ==============================================
-	BLOG
-	=============================================== -->
-      <div class="pt-page blog">
-		<h2>Coming Soon...</h2>
-	  </div>
-	<!-- END BLOG SECTION --> 
-    
-    
-    
-    
-    
-    <!-- ==============================================
-	CONTACT
-	=============================================== -->
-    <div class="pt-page contact">
-    	<section class="contact-form">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12">
-						<h4>your message</h4>
-						<div class="clearfix"></div>
-						<form action="" id="contactform">
-			        		<div class="col-md-6">	
-			                	<input type="text" name="name" class="form-control" placeholder="NAME">
-			                </div>
-			                <div class="col-md-6">
-								<input type="text" name="email" class="form-control" placeholder="EMAIL">
-							</div>
-							<div class="col-md-12">
-								<textarea name="message" rows="5" class="form-control" placeholder="MESSAGE"></textarea>
-							</div>
-							<div class="col-md-12 send-div">
-								<button class="btn btn-default css3Animate" type="submit" value="Send">SEND</button>
-							</div>
-						</form>
-						<div class="clearfix"></div>
-						<div class="success-message"></div>
-						<div class="error-message"></div> 
-					</div>
-				</div>
-			</div>
-		</section>
-    </div> <!-- END CONTACT SECTION -->
 	
 	<!-- ==============================================
 	FOOTER

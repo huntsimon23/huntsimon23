@@ -334,20 +334,20 @@ jQuery(document).ready(function() {
 	});
 	
 	/* ========== AJAX CONTENT WORK ========== */
-	var newHash     = '',
-		$mainContent = $('#work-content');
+	// var newHash     = '',
+	// 	$mainContent = $('#work-content');
 	
-	$('a.work-call').click(function() {
-		window.location.hash = $(this).attr('href');
-		return false;
-	});
+	// $('a.work-call').click(function() {
+	// 	window.location.hash = $(this).attr('href');
+	// 	return false;
+	// });
 
-	// Not all browsers support hashchange
-	// For older browser support: http://benalman.com/projects/jquery-hashchange-plugin/
-	$(window).bind('hashchange', function() {
-		newHash = window.location.hash.substr(1);
-		$mainContent.load(newHash + " #work-content > *");
-	});
+	// // Not all browsers support hashchange
+	// // For older browser support: http://benalman.com/projects/jquery-hashchange-plugin/
+	// $(window).bind('hashchange', function() {
+	// 	newHash = window.location.hash.substr(1);
+	// 	$mainContent.load(newHash + " #work-content > *");
+	// });
 	
 });
 
